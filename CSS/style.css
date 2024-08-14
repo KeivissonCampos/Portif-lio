@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+u{
+    color: rgb(0, 255, 0);
+}
+
+/* ------------------CABEÇALHO */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #15008d;
+    color: white;
+    padding: 20px 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo p{
+    padding: 0px 1px 0px 5px;
+}
+
+.logo h2{
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header a{
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header a:hover{
+    color: #ffffff;
+}
+
+/* ------------------CORPO */
+/* Apresentação Keivisson */
+main{
+    color: white;
+}
+
+.presentation{
+    background: linear-gradient(180deg, #000000 40%, #15008d 98%);
+}
+
+.container-Keivison,
+.container-Robot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    width: 100%;
+    gap: 20px;
+}
+
+#presentation-img{
+    display: flex
+}
+#presentation-text span{
+    font-size: 12px;
+}
+#presentation-text h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#presentation-img img{
+    width: 250px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+
+
+/* Apresentação Robô Max */
+
+#project-text{
+    text-align: center;
+    padding: 0 30px;
+}
+
+#project-text h2{
+    font-size: 40px;
+}
+
+#project-text p{
+    font-size: 21px;
+    padding: 15px;
+}
+
+/* Telas do APP */
+
+.screenApp{
+    background-color: #15008d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+.screenApp img{
+    max-width: 25%;
+    min-width: 180px;
+    border-radius: 10px;
+}
+
+.go-projeto{
+    background-color: #15008d;
+    text-align: center;
+    padding: 30px;
+    font-size: 21px;
+}
+
+.go-projeto a{
+    color: white;
+}
+.go-projeto :hover{
+    color: rgb(0, 255, 0);
+}
+
+@media screen and (max-width: 520px){
+    header{
+        padding: 20px 20px;
+    }
+    .container-Keivison,
+    .container-Robot{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #presentation-img{
+        order: 1;
+    }
+    #presentation-text{
+        order: 2;
+    }
+}
+
+
+
+/* --------------- */
+
+#other-projetcs{
+    background-color: black;
+    padding: 10px;
+}
+#other-projetcs h2{
+    margin-left: 50px;
+}
+
+.projetcs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+}
+
+.box{
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.box p{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.box li{
+    padding: 20px;
+}
+
+/* Contato */
+
+#contato{
+    background-color: #15008d;
+    text-align: center;
+    padding: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contato section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+input,
+button,
+textarea{
+    margin: 5px 0px;
+    border-radius: 5px;
+    padding: 2px;
+    width: 300px;
+    height: 30px;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+button{
+    background-color: green;
+    color: white;
+    height: 30px;
+    border: none;
+    
+}
+button:hover{
+    background-color: rgb(34, 204, 0);
+    color: white;
+    border: none;
+}
+
+.other-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.other-contato ul{
+    display: flex;
+}
+
+.other-contato li{
+        list-style: none;
+        padding: 20px;
+}
+
+.other-contato li{
+    list-style: none;
+    padding: 20px;
+}
+.other-contato li img{
+    height: 30px;
+    opacity: 0.8;
+}
+
+.other-contato li img:hover{
+    opacity: 1;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    height: 60px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+}
